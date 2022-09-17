@@ -1,3 +1,25 @@
+## Setting up ssh
+- create ssh key using ssh-keygen
+
+```
+    ssh-keygen -t ed25519 -C "myemail@eserv.net"
+```
+- copy id to remote machine
+
+```
+    ssh-copy-id <server-name@ip>
+```
+
+- verify on remote machine
+```
+    cat ~/.ssh/authorized_keys
+```
+
+- my need to add in client machine
+```
+    ssh-add <path to key>
+```
+
 start ssh agent in background
 
 ```
@@ -15,3 +37,6 @@ ssh-add ~/.ssh/nameofkey
 ```
     ssh-keygen -t ed25519 -C "myemail@eserv.net"
 ```
+
+
+
