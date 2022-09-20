@@ -37,6 +37,12 @@ ssh-add ~/.ssh/nameofkey
 ```
     ssh-keygen -t ed25519 -C "myemail@eserv.net"
 ```
+### connect using specific key
+```
+    ssh -i ~/.ssh/mykey <username@ip> 
+```
 
 
-
+## References
+- [Gitlab](https://docs.gitlab.com/ee/user/ssh.html)
+- [Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
